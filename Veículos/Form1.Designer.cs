@@ -44,6 +44,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "CHEVROLET",
+            "FIAT",
+            "VOLKSWAGEN",
+            "FORD"});
             this.comboBox1.Location = new System.Drawing.Point(75, 202);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(175, 23);
@@ -107,9 +112,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 31);
+            this.pictureBox2.Location = new System.Drawing.Point(-3, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(278, 118);
+            this.pictureBox2.Size = new System.Drawing.Size(306, 172);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
