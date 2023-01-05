@@ -20,6 +20,20 @@ namespace Veículos
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             string[] nomeFotosDosCarros = Directory.GetFiles(@"C:\Users\Bsoft\source\repos\Veículos\Images");
+                foreach (string img in nomeFotosDosCarros)
+            {
+
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "CHEVROLET") {
+                comboBox2.Items.Add("Cruze");
+                comboBox2.Items.Add("Tracker");
+
+
+            }
         }
     }
 }
