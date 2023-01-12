@@ -47,7 +47,6 @@
             this.comboBox1.Items.AddRange(new object[] {
             "CHEVROLET",
             "FIAT",
-            "VOLKSWAGEN",
             "FORD"});
             this.comboBox1.Location = new System.Drawing.Point(75, 202);
             this.comboBox1.Name = "comboBox1";

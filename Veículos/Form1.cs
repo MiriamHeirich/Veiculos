@@ -21,7 +21,7 @@ namespace Veículos
         {
             string[] nomeFotosDosCarros = Directory.GetFiles(@"C:\Users\Bsoft\source\repos\Veículos\Images");
                 foreach (string img in nomeFotosDosCarros)
-            {
+                             {
 
             }
         }
@@ -32,7 +32,19 @@ namespace Veículos
                 comboBox2.Items.Add("Cruze");
                 comboBox2.Items.Add("Tracker");
 
-
+              
+            }
+            else if (comboBox1.Text == "FIAT")
+            {
+                comboBox2.Items.Clear();    
+                comboBox2.Items.Add("Uno");
+                comboBox2.Items.Add("Tipo");
+            }
+            else
+            {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Ka");
+                comboBox2.Items.Add("EcoSport");
             }
         }
     }
