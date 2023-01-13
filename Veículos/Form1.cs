@@ -24,7 +24,10 @@ namespace Veículos
             {
                  string[] separador = img.Split('\\');
                 string[] nomeCarroSelecionado = separador[7].Split('.');
-                MessageBox.Show(nomeCarroSelecionado[0]);
+                if (comboBox2.Text == nomeCarroSelecionado[0])
+                {
+                    pictureBox1.ImageLocation = @"C:\Users\Bsoft\source\repos\Veículos\Images" + comboBox2.Text + ".jpg";
+                }   pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
 
@@ -50,6 +53,11 @@ namespace Veículos
                 comboBox2.Items.Add("Ka");
                 comboBox2.Items.Add("EcoSport");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
