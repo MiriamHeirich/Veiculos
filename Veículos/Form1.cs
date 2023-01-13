@@ -21,25 +21,29 @@ namespace Veículos
         {
             string[] nomeFotosDosCarros = Directory.GetFiles(@"C:\Users\Bsoft\source\repos\Veículos\Images");
                 foreach (string img in nomeFotosDosCarros)
-                             {
-
+            {
+                 string[] separador = img.Split('\\');
+                string[] nomeCarroSelecionado = separador[7].Split('.');
+                MessageBox.Show(nomeCarroSelecionado[0]);
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            comboBox2.Text = string.Empty;
+
             if (comboBox1.Text == "CHEVROLET") {
                 comboBox2.Items.Add("Cruze");
                 comboBox2.Items.Add("Tracker");
-
-              
             }
+
             else if (comboBox1.Text == "FIAT")
             {
                 comboBox2.Items.Clear();    
                 comboBox2.Items.Add("Uno");
                 comboBox2.Items.Add("Tipo");
             }
+
             else
             {
                 comboBox2.Items.Clear();
